@@ -22,5 +22,5 @@ while True: #para que se repita siempre
       for tarea in lista:
           print("-", tarea)
    elif opcion == 3:
-     print("No tiene tarea pendiente)
+     print("No tiene tarea pendiente")
    
