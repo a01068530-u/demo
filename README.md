@@ -8,9 +8,9 @@ Desarrollar un programa que funcione comom un gestor de tareas, dejando que el u
 Inicio
 Crear lista vacía llamada "Tareas"
 Mostrar menú con tres opciones:
-1) agregar tarea
-2) mostrar tareas
-3) Salir
+1 agregar tarea
+2 mostrar tareas
+3 Salir
 Si la opción es 1
 Pedir al usuario que ponga la descripción de la tarea
 Guardar tarea en la lista
