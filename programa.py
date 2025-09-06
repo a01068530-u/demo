@@ -21,8 +21,6 @@ def mostrar_tareas(lista):
     else:
         return "1" + lista[0] + "2" + lista[1] + "3" + lista[2]
 
-
-
 tareas = []    
 seguir = 1      
 
