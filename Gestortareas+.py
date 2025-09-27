@@ -1,28 +1,29 @@
 """
-Avance 4
-Algoritmo: Gestor de Tareas con estructuras de decisión simples
+Avance 5
+Algoritmo: Gestor de Tareas con ciclos
 Descripción:
-El usuario puede agregar tareas, verlas o salir.
+El usuario puede agregar tareas, mostrarlas con un ciclo o salir.
 """
 
 def agregar_tarea(lista, tarea):
     return lista + [tarea]
+
 def mostrar_tareas(lista):
-    # Decisión según cuántas tareas hay
     if lista == []:
         return "No hay tareas registradas"
-    elif lista[1:] == []:   # si solo hay 1 tarea
-        return "1" + lista[0]
-    elif lista[2:] == []:   # si hay 2 tareas
-        return "1" + lista[0] + "2" + lista[1]
-    else:                   # si hay 3 o más
-        return "1" + lista[0] + "2" + lista[1] + "3" + lista[2]
+    else:
+        texto = ""
+        numero = 1
+        for tarea in lista:  # recorre cada tarea en la lista
+            texto = texto + str(numero) + " " + tarea + " "
+            numero = numero + 1
+        return texto
 
 tareas = []
 seguir = 1
 
 while seguir == 1:
-    print("Menú")
+    print("MENÚ")
     print("Agregar Tarea")
     print("Mostrar Tareas")
     print("Salir")
