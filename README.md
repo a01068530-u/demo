@@ -5,40 +5,63 @@ En este proyecto se considera que en la vida cotidiana es común tener múltiple
 Desarrollar un programa que funcione comom un gestor de tareas, dejando que el usuario cree, modifique y elimine sus tareas para que pueda llevar un control básico de sus actividades
 
 # Algoritmo
-Inicio
+Inicio del programa
 
-Crear lista vacía llamada "Tareas"
+Se importa la biblioteca datetime para manejar fechas y horas.
 
-Mostrar menú con tres opciones:
+Se inicializa una lista vacía llamada tareas donde se almacenarán todas las tareas.
 
-1 agregar tarea
+Mostrar menú principal
 
-2 mostrar tareas
+Se imprime un menú con las siguientes opciones:
+1️ Agregar tarea
+2️ Ver tareas
+3️ Completar tarea
+4️ Salir
 
-3 Salir
+Leer opción del usuario
 
-Si la opción es 1
+El programa solicita al usuario que elija una opción mediante input().
 
-Pedir al usuario que ponga la descripción de la tarea
+Si el usuario elige "1. Agregar tarea":
 
-Guardar tarea en la lista
+Se pide al usuario que escriba una descripción de la tarea.
 
-Volver al menú
+Se agrega una sublista a la lista principal tareas con el formato:
+["nombre de tarea", "pendiente"].
 
-Si la opción es 2
+Se muestra un mensaje de confirmación.
 
-Revisar si la lista está vacía
+Si el usuario elige "2. Ver tareas":
 
-Si está vacía, mostrar este mensaje "No hay tareas registradas"
+Se recorre la lista tareas con un ciclo for.
 
-Si no está vacía , mostrar las tareas en su número de orden
+Se muestran todas las tareas con su número de orden y estado actual.
 
-Volver al menú
+Si la lista está vacía, se muestra el mensaje “No hay tareas registradas”.
 
-Si la opción es 3
+Si el usuario elige "3. Completar tarea":
 
-Mostrar el mensaje "Programa finalizado"
+Se muestra la lista de tareas disponibles.
 
-Terminar la ejecucón
+El usuario elige el número de tarea que desea marcar como completada.
 
-Repetir desde el paso 3 hasta que el usuario elija salir
+El programa obtiene la fecha y hora actual usando datetime.datetime.now().
+
+Se actualiza el estado de la tarea a:
+"completada (fecha y hora)".
+
+Se muestra un mensaje confirmando el cambio.
+
+Si el usuario elige "4. Salir":
+
+El ciclo principal termina.
+
+Se muestra un mensaje de despedida:
+"¡Gracias por usar el administrador de tareas!".
+
+Si el usuario ingresa una opción incorrecta:
+
+Se muestra un mensaje de error y se repite el menú.
+
+Fin del programa
