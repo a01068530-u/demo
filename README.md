@@ -65,3 +65,7 @@ Si el usuario ingresa una opción incorrecta:
 Se muestra un mensaje de error y se repite el menú.
 
 Fin del programa
+
+
+#Referencias API
+"datetime" (https://docs.python.org/3/library/datetime.html): se usa para obtener la fecha actual de cada gasto.
